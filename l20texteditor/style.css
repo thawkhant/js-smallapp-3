@@ -1,0 +1,32 @@
+*{
+	box-sizing: border-box;
+}
+
+body{
+	font-family: sans-serif;
+	height: 100vh;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+h4{
+	color: steelblue;
+	text-align: center;
+}
+
+button{
+	margin: 20px 8px;
+}
+
+button:hover{
+	background: steelblue !important;
+}
+
+textarea{
+	padding: 10px;
+	border-color: steelblue;
+	resize: none;
+    overflow-y: scroll;
+}

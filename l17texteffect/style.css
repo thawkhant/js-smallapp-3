@@ -1,0 +1,73 @@
+body{
+	font-family: sans-serif;
+	height: 100vh;
+
+	background: linear-gradient(to top,rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.9));
+	color: #fff;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+h1{
+	font-size: 40px;
+	color: #ddd;
+}
+
+span.textani{
+	/*border-right: 2px solid #747474;*/
+
+	animation-name: mycursorani;
+	animation-duration: .8s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes mycursorani{
+	from{
+          border: none;
+	}
+	to{
+          border-right: 2px solid #747474;
+	}
+}
+
+.red{
+	color: red;
+}
+
+.skyblue{
+	color: skyblue;
+}
+
+.violet{
+	color: violet;
+}
+
+.yellow{
+	color: yellow;
+}
+
+
+
+em{
+	color: #fff;
+	font-style: unset;  /*i tag lot ma saung say chin lot*/
+
+	animation-name: textlighting;
+	animation-duration: .8s;
+	animation-fill-mode: backwards;
+}
+
+@keyframes textlighting{
+	0%{
+      opacity: 0;
+	}
+	50%{
+     opacity: 0.5;
+     text-shadow: 0 0 20px #fff;
+	}
+	100%{
+     opacity: 1;
+	}
+}
