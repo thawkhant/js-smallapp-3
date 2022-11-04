@@ -13,7 +13,7 @@
 
 		<div class="row">
 			<div class="col-md-12">
-				<button type="button" class="btn btn-outline-secondary rounded-0" title="Bold Text" onclick="boldfun()">Bold</button>
+				<!-- <button type="button" class="btn btn-outline-secondary rounded-0" title="Bold Text" onclick="boldfun()">Bold</button>
 				<button type="button" class="btn btn-outline-secondary rounded-0" title="Italic Text" onclick="italicfun()">Italic</button>
 				<button type="button" class="btn btn-outline-secondary rounded-0" title="Underline Text" onclick="underlinefun()">Underline</button>
 				<button type="button" class="btn btn-outline-secondary rounded-0" title="Left Text" onclick="laglgfun()"><i class="fas fa-align-left"></i></button>
@@ -22,7 +22,73 @@
 				<button type="button" class="btn btn-outline-secondary rounded-0" title="Upper Case" onclick="upcasefun()">Uppercase</button>
 				<button type="button" class="btn btn-outline-secondary rounded-0" title="Lower Case" onclick="lwcase()">Lower Case</button>
 				<button type="button" class="btn btn-outline-secondary rounded-0" title="Capitalize" onclick="capcasefun()">Capitalize Case</button>
-				<button type="button" class="btn btn-outline-secondary rounded-0" title="Clear Text" onclick="clearfun()">Clear</button>
+				<button type="button" class="btn btn-outline-secondary rounded-0" title="Clear Text" onclick="clearfun()">Clear</button> -->
+
+
+				<button type="button" class="btn btn-outline-secondary rounded-0" title="Bold Text" data-abc="bold">Bold</button>
+				<button type="button" class="btn btn-outline-secondary rounded-0" title="Italic Text" data-abc="italic">Italic</button>
+				<button type="button" class="btn btn-outline-secondary rounded-0" title="Underline Text" data-abc="underline">Underline</button>
+				<button type="button" class="btn btn-outline-secondary rounded-0" title="Linethrough" data-abc="strikeThrough">Linethurough</button>
+
+				<button type="button" class="btn btn-outline-secondary rounded-0" title="Left Text" data-abc="justifyLeft"><i class="fas fa-align-left"></i></button>
+				<button type="button" class="btn btn-outline-secondary rounded-0" title="Center Text" data-abc="justifyCenter"><i class="fas fa-align-center"></i></button>
+				<button type="button" class="btn btn-outline-secondary rounded-0" title="Right Text" data-abc="justifyRight"><i class="fas fa-align-right"></i></button>
+				<button type="button" class="btn btn-outline-secondary rounded-0" title="justify Align" data-abc="justifyFull"><i class="fas fa-align-justify"></i></button>
+
+				<button type="button" class="btn btn-outline-secondary rounded-0" title="Upper Case" onclick="upcasefun()">Uppercase</button>
+				<button type="button" class="btn btn-outline-secondary rounded-0" title="Lower Case" onclick="lwcase()">Lower Case</button>
+				<button type="button" class="btn btn-outline-secondary rounded-0" title="Capitalize" onclick="capcasefun()">Capitalize Case</button>
+
+				<button type="button" class="btn btn-outline-secondary rounded-0" title="subscript" data-abc="subscript"><i class="fas fa-subscript"></i></button>
+				<button type="button" class="btn btn-outline-secondary rounded-0" title="superscript" data-abc="superscript"><i class="fas fa-superscript"></i></button>
+
+				<button type="button" class="btn btn-outline-secondary rounded-0" title="Ruler" data-abc="insertHorizontalRule"><i class="fas fa-ruler"></i></button>
+  
+                <button type="button" class="btn btn-outline-secondary rounded-0" title="Order List" data-abc="insertOrderedList"><i class="fas fa-list-ol"></i></button>
+                <button type="button" class="btn btn-outline-secondary rounded-0" title="Unorder List" data-abc="insertUnOrderedList" ><i class="fas fa-list-ul"></i></button>
+
+                <button type="button" class="btn btn-outline-secondary rounded-0" title="Select All" data-abc="selectall"><i class="fas fa-check"></i></button>
+                <button type="button" class="btn btn-outline-secondary rounded-0" title="Backspace" data-abc="delete"><i class="fas fa-backspace"></i></button>
+                <button type="button" class="btn btn-outline-secondary rounded-0" title="Fowrardspace" data-abc="forwardDelete"><i class="fas fa-trash-alt"></i></button>
+
+                <button type="button" class="btn btn-outline-secondary rounded-0" title="Copy" data-abc="copy"><i class="fas fa-copy"></i></button>
+                <button type="button" class="btn btn-outline-secondary rounded-0" title="Cut" data-abc="cut"><i class="fas fa-cut"></i></button>
+                <button type="button" class="btn btn-outline-secondary rounded-0" title="Paste" data-abc="paste"><i class="fas fa-paste"></i></button>
+
+                <button type="button" class="btn btn-outline-secondary rounded-0" title="Redo" data-abc="redo"><i class="fas fa-redo"></i></button>
+                <button type="button" class="btn btn-outline-secondary rounded-0" title="Undo" data-abc="undo"><i class="fas fa-undo"></i></button>
+
+                 <button type="button" class="btn btn-outline-secondary rounded-0" title="link" data-abc="createLink"><i class="fas fa-link"></i></button>
+                <button type="button" class="btn btn-outline-secondary rounded-0" title="Unlink" data-abc="unlink"><i class="fas fa-unlink"></i></button>
+
+                 <button type="button" class="btn btn-outline-secondary rounded-0" title="Image" data-abc="insertImage"><i class="fas fa-image"></i></button>
+
+                 <select name="txtcolor" id="txtcolor" class="btn btn-outline-secondary rounded-0" data-abc="foreColor">
+                 	<option value="black">Black</option>
+                 	<option value="white">White</option>
+                 	<option value="red">Red</option>
+                 	<option value="green">Green</option>
+                 	<option value="blue">Blue</option>
+                 </select>
+
+                  <select name="bgcolor" id="bgcolor" class="btn btn-outline-secondary rounded-0" data-abc="backColor">
+                 	<option value="black">Black</option>
+                 	<option value="white">White</option>
+                 	<option value="red">Red</option>
+                 	<option value="green">Green</option>
+                 	<option value="blue">Blue</option>
+                 </select>
+
+                  <select name="fntname" id="fntname" class="btn btn-outline-secondary rounded-0" data-abc="fontName">
+                 	<option value="arial">Arial</option>
+                 	<option value="century">Century</option>
+                 	<option value="sans-serif">Sans-serif</option>
+                 	<option value="time new romen">Time new romen</option>
+                 	
+                 </select>
+
+				<button type="button" class="btn btn-outline-secondary rounded-0" title="Clear Text" data-abc="cleartext">Clear</button>
+				<button type="button" class="btn btn-outline-secondary rounded-0" title="removeformat" data-abc="removeFormat">Remove Format</button>
 			</div>
 		</div>
 
@@ -30,7 +96,10 @@
 		     	<div class="col-md-12">
 		     		<form action="" method="">
 		     			<div class="form-group">
-		     				<textarea name="arti" id="textarea" class="form-control shadow" placeholder="Write Something..." rows="15"></textarea>
+		     				<!-- <textarea name="arti" id="textarea" class="form-control shadow" placeholder="Write Something..." rows="15"></textarea> --> 
+                             
+                             <!-- contenteditable="true" ka textarea lo myo pay dar pr sir //  spell check ka spelling ko check pay dr -->
+		     				<div id="divarea" class="divarea" ></div>  <!-- contenteditable="true" spellcheck="false" -->
 		     			</div>
 		     			<div class="text-end">
 		     				<button type="button" class="btn btn-secondary">Cancel</button>

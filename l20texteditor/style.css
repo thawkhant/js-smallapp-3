@@ -30,3 +30,19 @@ textarea{
 	resize: none;
     overflow-y: scroll;
 }
+
+.divarea{
+	widows: 100%;
+	min-height: 200px;   /*min height ka box ko paw nay aung*/
+	max-height: 400px;     /*max height ka box ye a shee naing shone ko pyaw dar*/
+    border: 1px solid steelblue;
+    padding: 10px;
+    text-align: justify;
+    overflow-y: scroll;
+
+    resize:vertical;
+}
+
+.divarea:focus{
+	outline: none;
+}
